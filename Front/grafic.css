@@ -1,84 +1,126 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin-top: 0px;
+  width: 100%;
+  margin: 0;
+}
+
+div {
+  outline: black solid 2px;
 }
 
 .wrapper {
   width: 100%;
-  height: auto;}
+  height: auto;
+}
+
+header {
+  width: 100%;
+  background: #0a0a0a;
+  height: 55px;
+}
 
 .header {
-  width: 100%;
   height: auto;
-  text-align: center;
-}
-
-.header div{
-  width: 25%;
-  display: inline-block;
-}
-
-.header img {
   width: 100%;
+  background: black;
+  position: fixed;
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.content {
-  width: 15%;
+.logo {
+  display: flex;
+  margin: 0 15% 0 0;
   height: 100%;
-  display: inline-block;
-  border: 2px solid black;
-  padding: 1%;
 }
 
-.nav a {
-  display: block;
+.logo img {
+  height: 100%;
 }
 
-.map img {
-  margin-top: 4%;
+.mainMenu {
+  text-decoration: none;
+  box-sizing: border-box;
   width: 100%;
-  height: auto;
+}
+
+.header ul {
+  display: flex;
+  padding: 0%;
+}
+
+.header li {
+  margin: 0 0 0 5%;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New';
+  list-style: none;
 }
 
 .main {
   display: inline-block;
   width: 81%;
   vertical-align: top;
+  margin: 0 0 0 0.5%;
 }
 
 .header_main {
-  width: 100%;
+  width: 97%;
   height: auto;
   text-align: center;
-  border: 2px solid black;
+}
+
+.mainCarousel {
+  width: 100%;
+  max-width: 1270px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 35px auto 0;
+}
+
+.block_heading {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.block_heading p {
+  font: 48px/1.0 proxima_bold;
+}
+
+.owl-carousel {
+  transform: translate3d(-1764px, 0px, 0px); 
+  transition: all 0.25s ease 0s;
+  width: 4704px;
 }
 
 .block1,
 .block2,
 .block3 {
-  display: inline-block;
-  border: 2px solid black;
-  text-align: center;
-  margin-top: 0.5%;
-  width: 32.6%;
+  width: 413px;
+  margin: 0 4% 0 4%;
 }
 
-.blockIMG {
-  width: 80%;
-  text-align: center;
-  display: inline-block;
-
-}
-
-.blockIMG img {
-  width: 100%;
-}
-
-.blockIMG p {
-  text-align: center;
-  width: 100%;
-  height: 100%;
+.block1 p,
+.block2 p,
+.block3 p {
   margin-block-start: 5%;
   margin-block-end: 0px;
+  display: inline-block;
+  white-space: normal;
+  padding: 2%;
+
 }
 
 .manuChose {
@@ -86,21 +128,24 @@ body {
   width: 49.2%;
   height: 100%;
   margin-left: -0.5%;
+  margin-top: 5%;
   vertical-align: top;
 }
 
-.img2, .img3, .img4 {
-  display: inline-block;
+.mainProduction {
+  margin-top: 2%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.img2 img, .img3 img, .img4 img {
+.smallImg {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 100%;
-  display: block;
 }
 
-.img3 {
-  margin: 0 13% 0 13%;
+.smallImg img {
+  width: 17%;
 }
 
 .orderIMG {
@@ -119,7 +164,30 @@ body {
   display: inline-block;
 }
 
+.orderText p {
+  margin: 0 0 1% 0;
+  padding: 2%;
+}
+
 .order {
   text-align: center;
   display: inline-block;
+}
+
+.content {
+  width: 15%;
+  height: 100%;
+  display: inline-block;
+  padding: 1%;
+  margin: 0.5% 0 0 0.5%;
+}
+
+.nav a {
+  display: block;
+}
+
+.map img {
+  margin-top: 4%;
+  width: 100%;
+  height: auto;
 }
